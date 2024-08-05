@@ -112,6 +112,9 @@
     margin-top: 4rem;
     position: relative;
   }
+  .service-bg img{
+    width: 100%;
+  }
   .service-bg .service-content{
     width: 85%;
     height: 100%;
@@ -121,10 +124,261 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 1rem;
   }
   .service-bg .service-content h1{
     color: #fff;
     font-family: "Montserrat", sans-serif;
     font-size: 2.2rem;
   }
+  .service-bg .service-content .btn-row{
+    margin-top: 3.5rem;
+  }
+  .service-bg .service-content .btn-row button{
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px 1rem;
+    border-radius: 10px;
+    margin-right: 0.5rem;
+    border: none;
+    outline: none;
+    transition: all 0.2s ease;
+  }
+  .service-bg .service-content .btn-row button:hover{
+    background-color: #dfdfdf;
+  }
+  .service-bg .service-content .btn-row button.btn-active{
+    color: #fff;
+    background-color: #ef9323;
+  }
+  .service-bg .service-content .btn-row button.btn-active:hover{
+    background-color: #de7e08;
+  }
+  .service-bg .service-content p{
+   color: #fff;
+   margin-top: 2rem;
+   font-family: "Montserrat", sans-serif;
+   font-size: 1rem;
+   font-weight: 500;
+   min-height: 3.2rem;
+  }
   /* Service Section Ends Here */
+
+
+  /* Slider Section Starts Here */
+  .marquee {
+    overflow-x: clip;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+  }
+  
+  .marquee-inner {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    padding: 1rem 0;
+    will-change: transform;
+  }
+  
+  .marquee-inner img {
+    height: 100%;
+    transition: transform 0.5s;
+    flex-shrink: 0;
+    width: 13vw;
+    border-radius: 2rem;
+  }
+  
+  .marquee-inner #img-4{
+    width: 9vw;
+  }
+  
+  .marquee-inner img:hover {
+    transform: scale(1.03);
+  }
+  /* Slider Section Ends Here */
+
+
+  /* Contact Us Section Starts Here */
+  .contact{
+    background-color: #f2f2f2;
+    padding: 3rem 0 6rem 0;
+  }
+  .contact .contact-box h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+  }
+  .contact .contact-box .contact-row{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+  }
+  .contact .contact-box .contact-row .contact-person{
+    width: 40%;
+    display: flex;
+    background-color: #e0e0e0;
+    gap: 5%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .contact .contact-box .contact-row .contact-person .person-image{
+    width: 30%;
+  }
+  .contact .contact-box .contact-row .contact-person .person-image img{
+    width: 100%;
+  }
+  .contact .contact-box .contact-row .contact-person .person-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact .contact-box .contact-row .contact-person .person-details h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.7rem;
+  }
+  .contact .contact-box .contact-row .contact-person .person-details p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    padding: 5px 0;
+    font-weight: 500;
+    margin: 0;
+  }
+  .contact .contact-box .contact-row .contact-person .person-details p span{
+    font-weight: 700;
+  }
+  .contact .contact-box .contact-row .contact-person .person-details>div{
+    margin-top: 0.8rem;
+  }
+  /* Contact Us Section Ends Here */
+ 
+
+  /* Footer Styles Starts Here */
+  footer{
+    background-color: #ec9122;
+    padding: 3rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .footer{
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .left{
+    width: 29%;
+    color: #fff;
+  }
+  .footer .left img{
+    background-color: #fff;
+    padding: 0.5rem 0.8rem;
+    margin-top: 1rem;
+  }
+  .footer .left a{
+    color: #fff;
+  }
+  .footer .left .foot-icons{
+    margin-top: 2rem;
+  }
+  .footer .left .foot-icons i{
+    margin-right: 0.7rem;
+    font-size: 1.3rem;
+    transition: all 0.2s ease;
+  }
+  .footer .left .foot-icons i:hover{
+    scale: 1.1;
+    color: #5f86c3;
+  }
+  
+  .footer .center{
+    width: 30%;
+  }
+  .footer .center h3{
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  .footer .center img{
+    width: 100%;
+    /* position: relative; */
+  }
+  .footer .center button{
+    position: absolute;
+    left: 75%;
+    top: 46%;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    padding: 2px 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #616161;
+    background-color: #f9f9f9;
+    transition: all 0.2s ease;
+  }
+  .footer .center button:hover{
+    background-color: #ededede4;
+  }
+  .footer .center .linkedin-content{
+   height: 150px;
+   overflow-y: scroll;
+   padding: 10px;
+   background-color: #d2d0d0;
+  }
+  
+  .footer .end{
+   width: 22%;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+  }
+  .footer .end h3{
+   font-size: 1.1rem;
+  }
+  .footer .end p{
+   font-size: 0.8rem;
+  }
+  .footer .end div{
+   margin-bottom: 1rem;
+  }
+  /* .footer .end img{
+   width: 30px;
+   margin-left: 90%;
+   margin-top: 1.3rem;
+   cursor: pointer;
+   transition: all 0.3s ease;
+  } */
+  /* .footer .end img:hover{
+   scale: 1.1;
+  } */
+  .footer-line .line{
+    width: 100%;
+    height: 1.5px;
+    background-color: #fff;
+    margin-top: 1rem;
+  }
+  .copyright{
+   display: flex;
+   justify-content: space-between;
+   color: #fff;
+   margin-top: 7px;
+   font-size: 0.9rem;
+  }
+
+  #back-to-top{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 1.2rem;
+    right: 1.4rem;
+    box-shadow: rgba(0, 0, 0, 0.308) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: all 0.3s ease;
+  }
+  #back-to-top:hover{
+      scale: 1.1;
+  }
+
+/* Footer Styles Ends Here */
